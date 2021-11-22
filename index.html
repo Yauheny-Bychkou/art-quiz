@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="dist/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet" />
+    <title>art-quiz</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header-title">ART QUIZ</h1>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main-wrap">
+          <button class="main-wrap__button main-wrap__painter">Художники</button>
+          <button class="main-wrap__button main-wrap__painter--repeat">Художники</button>
+          <button class="main-wrap__button main-wrap__picture">Картины</button>
+          <button class="main-wrap__button main-wrap__picture--repeat">Картины</button>
+          <button class="main-wrap__button main-wrap__other">Блиц-игра</button>
+          <button class="main-wrap__button main-wrap__options">Настройки</button>
+        </div>
+      </div>
+      <div class="painter page">
+        <div class="painter-wrap center">
+          <h3 class="painter-wrap__title">Категории</h3>
+          <button class="painter-wrap__close button">На главную</button>
+          <div class="painter-wrap__categories center">
+            <div class="painter-wrap__btn painter-wrap__one">
+              <span class="painter-wrap__span">01</span>
+              <span class="painter-wrap__span--result painter-wrap__span--one none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--one none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__two">
+              <span class="painter-wrap__span">02</span>
+              <span class="painter-wrap__span--result painter-wrap__span--two none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--two none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__three">
+              <span class="painter-wrap__span">03</span>
+              <span class="painter-wrap__span--result painter-wrap__span--three none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--three none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__four">
+              <span class="painter-wrap__span">04</span>
+              <span class="painter-wrap__span--result painter-wrap__span--four none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--four none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__five">
+              <span class="painter-wrap__span">05</span>
+              <span class="painter-wrap__span--result painter-wrap__span--five none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--five none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__six">
+              <span class="painter-wrap__span">06</span>
+              <span class="painter-wrap__span--result painter-wrap__span--six none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--six none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__seven">
+              <span class="painter-wrap__span">07</span>
+              <span class="painter-wrap__span--result painter-wrap__span--seven none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--seven none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__eight">
+              <span class="painter-wrap__span">08</span>
+              <span class="painter-wrap__span--result painter-wrap__span--eight none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--eight none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__nine">
+              <span class="painter-wrap__span">09</span>
+              <span class="painter-wrap__span--result painter-wrap__span--nine none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--nine none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__ten">
+              <span class="painter-wrap__span">10</span>
+              <span class="painter-wrap__span--result painter-wrap__span--ten none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--ten none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__eleven">
+              <span class="painter-wrap__span">11</span>
+              <span class="painter-wrap__span--result painter-wrap__span--eleven none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--eleven none">Страница результов</button>
+            </div>
+            <div class="painter-wrap__btn painter-wrap__twelve">
+              <span class="painter-wrap__span">12</span>
+              <span class="painter-wrap__span--result painter-wrap__span--twelve none">0/10</span>
+              <button class="painter-wrap__btn--result painter-wrap__btn--twelve none">Страница результов</button>
+            </div>
+          </div>
+        </div>
+        <div class="painter-type absolute">
+          <div class="painter-type__wrap">
+            <div class="painter-type__buttons">
+              <button class="painter-type__main button">На главную</button>
+              <button class="painter-type__categ button">Категории</button>
+            </div>
+          </div>
+        </div>
+        <div class="painter-result absolute center">
+          <div class="painter-result__wrap">
+            <div class="painter-result__wrap">
+              <button class="painter-type__main button">На главную</button>
+              <button class="painter-result__main button">Категории</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="picture page">
+        <div class="picture-wrap center">
+          <h3 class="picture-wrap__title">Категории</h3>
+          <button class="picture-wrap__close button">На главную</button>
+          <div class="picture-wrap__categories center">
+            <div class="picture-wrap__btn picture-wrap__one">
+              <span class="picture-wrap__span">01</span>
+              <span class="picture-wrap__span--result picture-wrap__span--one none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--one none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__two">
+              <span class="picture-wrap__span">02</span>
+              <span class="picture-wrap__span--result picture-wrap__span--two none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--two none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__three">
+              <span class="picture-wrap__span">03</span>
+              <span class="picture-wrap__span--result picture-wrap__span--three none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--three none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__four">
+              <span class="picture-wrap__span">04</span>
+              <span class="picture-wrap__span--result picture-wrap__span--four none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--four none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__five">
+              <span class="picture-wrap__span">05</span>
+              <span class="picture-wrap__span--result picture-wrap__span--five none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--five none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__six">
+              <span class="picture-wrap__span">06</span>
+              <span class="picture-wrap__span--result picture-wrap__span--six none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--six none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__seven">
+              <span class="picture-wrap__span">07</span>
+              <span class="picture-wrap__span--result picture-wrap__span--seven none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--seven none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__eight">
+              <span class="picture-wrap__span">08</span>
+              <span class="picture-wrap__span--result picture-wrap__span--eight none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--eight none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__nine">
+              <span class="picture-wrap__span">09</span>
+              <span class="picture-wrap__span--result picture-wrap__span--nine none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--nine none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__ten">
+              <span class="picture-wrap__span">10</span>
+              <span class="picture-wrap__span--result picture-wrap__span--ten none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--ten none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__eleven">
+              <span class="picture-wrap__span">11</span>
+              <span class="picture-wrap__span--result picture-wrap__span--eleven none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--eleven none">Страница результов</button>
+            </div>
+            <div class="picture-wrap__btn picture-wrap__twelve">
+              <span class="picture-wrap__span">12</span>
+              <span class="picture-wrap__span--result picture-wrap__span--twelve none">0/10</span>
+              <button class="picture-wrap__btn--result picture-wrap__btn--twelve none">Страница результов</button>
+            </div>
+          </div>
+          <div class="picture-type absolute">
+            <div class="picture-type__wrap">
+              <div class="picture-type__buttons">
+                <button class="picture-type__main button">На главную</button>
+                <button class="picture-type__categ button">Категории</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="picture-result absolute center">
+          <div class="picture-result__wrap">
+            <div class="picture-result__buttons">
+              <button class="picture-result__main button">Категории</button>
+              <button class="picture-result__update button">На главную</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="options page">
+        <div class="options-wrap center">
+          <button class="options-wrap__close button">На главную</button>
+          <div class="options-wrap__volume center">
+            <div class="options-wrap__music center">
+              <hr class="line line-one" />
+              <h3 class="title">Звук</h3>
+              <div class="options-wrap__regular">
+                <img class="options-wrap__svg" src="img/volume.svg" alt="volume" />
+                <input type="range" class="options-wrap__range" />
+              </div>
+            </div>
+          </div>
+          <hr class="line" />
+          <div class="options-wrap__timer center">
+            <h3 class="title">Таймер</h3>
+            <button class="options-wrap__btn button">Включать игру на время</button>
+            <button class="options-wrap__btn--repeat button none">Выключать игру на время</button>
+            <select class="options-wrap__select button none" name="" id="">
+              <option value="0">Время для ответа</option>
+              <option value="5">5 секунд</option>
+              <option value="10">10 секунд</option>
+              <option value="15">15 секунд</option>
+              <option value="20">20 секунд</option>
+              <option value="25">25 секунд</option>
+              <option value="30">30 секунд</option>
+            </select>
+          </div>
+          <hr class="line" />
+        </div>
+      </div>
+      <div class="blitz page">
+        <div class="blitz-wrap center"></div>
+        <div class="blitz-result absolute center"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-left">
+        <a href="https://rs.school/js/" target="blank" class="footer-left__link">
+          <img src="img/rs.svg" alt="rsschool" />
+        </a>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/Yauheny-Bychkou" target="black" class="footer-right__link"
+          >App developer: Yauheny Bychkou</a
+        >
+        <span class="footer-right__span">2021</span>
+      </div>
+    </footer>
+  </body>
+</html>

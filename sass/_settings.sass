@@ -1,0 +1,609 @@
+*
+  box-sizing: border-box
+body
+  position: relative
+  font-family: "Inter"
+.container
+  max-width: 1460px
+  margin: 0 auto
+  padding: 0 20px
+.footer
+  position: absolute
+  padding: 20px
+  background-color: #FFD700
+  bottom: 0px
+  color: #fff
+  left: 0
+  display: flex
+  flex-direction: column
+  width: 200px
+  justify-content: space-between
+  &-right
+    &__link
+      text-decoration: none
+      color: #fff
+      margin-right: 10px
+.none
+  display: none !important
+
+.center
+  display: flex
+  flex-direction: column
+  align-items: center
+.page
+  position: absolute
+  background-color: #fff
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 5
+  display: none
+  flex-direction: column
+  align-items: center
+.absolute
+  position: absolute
+  background-color: #fff
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 5
+  display: none
+.line
+  width: 100%
+  height: 2px
+  border: 1px solid #FFD700
+  background-color: #FFD700
+.button
+  background-color: #FFD700
+  font-size: 20px
+  color: #fff
+  border: none
+  height: 50px
+  border-radius: 5px      
+  cursor: pointer
+.title
+  color: #FFD700
+.game
+  &-painter
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__timer
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      background-color: blue
+      width: 100%
+      margin-top: 10px
+      padding-top: 10px
+      padding-bottom: 10px
+    &__time
+      background-color: transparent
+      color: #fff
+      font-size: 25px
+      text-align: center
+      border: none
+      outline: none
+    &__dots
+      display: flex
+      padding: 20px
+    &__dot
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: 1px solid black
+      margin-right: 25px
+      &:last-child
+        margin-right: 0
+    &__top 
+      display: flex
+      border-bottom: 5px solid black
+    &__bottom
+      display: flex
+    &__answer
+      background-color: transparent
+      padding: 20px
+      width: 200px
+      text-align: center
+      border: none
+      cursor: pointer
+      &:nth-child(1)
+        border-right: 5px solid black
+  &-picture
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__timer
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      background-color: blue
+      width: 100%
+      margin-top: 5px
+      padding-top: 10px
+      padding-bottom: 10px
+    &__time
+      background-color: transparent
+      color: #fff
+      font-size: 25px
+      text-align: center
+      border: none
+      outline: none
+    &__dots
+      display: flex
+      padding: 20px
+    &__dot
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: 1px solid black
+      margin-right: 25px
+      &:last-child
+        margin-right: 0
+    &__answers
+      padding-top: 15px
+      padding-bottom: 15px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__top 
+      display: flex
+      border-bottom: 5px solid black
+    &__bottom
+      display: flex
+    &__answer
+      background-color: transparent
+      padding: 20px
+      width: 200px
+      text-align: center
+      border: none
+      cursor: pointer
+      &:nth-child(1)
+        border-right: 5px solid black
+        
+.picture
+  &-final
+    width: 600px
+    position: absolute
+    left: -150%
+    top: 24%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+    z-index: 99
+    border: 2px solid black
+    border-radius: 10px
+    padding-top: 15px
+    padding-bottom: 15px
+    &__visible
+      left: 35% !important
+      transition: 1s ease !important
+  &-info
+    width: 600px
+    position: absolute
+    left: -150%
+    top: 24%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+    z-index: 99
+    border: 2px solid black
+    border-radius: 10px
+    padding-top: 15px
+    padding-bottom: 15px
+    &__wrap
+      width: 300px
+      height: 300px
+      margin-top: 20px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__visible
+      left: 35% !important
+      transition: 1s ease !important
+  &-modal
+    width: 600px
+    position: absolute
+    left: -150%
+    top: 24%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+    z-index: 99
+    border: 2px solid black
+    border-radius: 10px
+    padding-top: 15px
+    padding-bottom: 15px
+    &__visible
+      left: 35% !important
+      transition: 2s ease!important
+    &__wrap
+      margin-top: 20px
+      width: 300px
+      height: 300px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-result
+    &__cont
+      display: flex
+    &__cards
+      padding-top: 20px
+    &__card
+      position: relative
+      width: 120px
+      height: 120px
+      padding: 10px
+      overflow: hidden
+    &__overlay
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background-color: #000
+      opacity: 0.7
+      cursor: pointer
+    &__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      cursor: pointer
+.painter
+  &-final
+    width: 600px
+    position: absolute
+    left: -150%
+    top: 24%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+    z-index: 99
+    border: 2px solid black
+    border-radius: 10px
+    padding-top: 15px
+    padding-bottom: 15px
+    &__visible
+      left: 35% !important
+      transition: 1s ease !important
+  &-info
+    width: 600px
+    position: absolute
+    left: -150%
+    top: 24%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+    z-index: 99
+    border: 2px solid black
+    border-radius: 10px
+    padding-top: 15px
+    padding-bottom: 15px
+    &__wrap
+      width: 300px
+      height: 300px
+      margin-top: 20px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &__visible
+      left: 35% !important
+      transition: 1s ease !important
+  &-modal
+    width: 600px
+    position: absolute
+    left: -150%
+    top: 24%
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: #fff
+    z-index: 99
+    border: 2px solid black
+    border-radius: 10px
+    padding-top: 15px
+    padding-bottom: 15px
+    &__visible
+      left: 35% !important
+      transition: 2s ease !important
+    &__wrap
+      margin-top: 20px
+      width: 300px
+      height: 300px
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-result
+    &__cont
+      display: flex
+    &__cards
+      padding-top: 20px
+    &__card
+      position: relative
+      width: 120px
+      height: 120px
+      padding: 10px
+      overflow: hidden
+    &__overlay
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background-color: #000
+      opacity: 0.7
+      cursor: pointer
+    &__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      cursor: pointer
+.overlay
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  background-color: #000
+  opacity: 0.5
+  z-index: 90
+  &-preloader
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: #000
+    opacity: 1
+    z-index: 90
+.sk
+  &-rotating
+    position: absolute
+    top: 75%
+    left: 44%
+    z-index: 100
+    &-plane
+      display: flex
+      flex-direction: column
+      align-items: center
+      space-between: center
+      width: 10em
+      height: 10em
+      margin: auto
+      background-color: #FFD700
+      animation: sk-rotating-plane 1.2s infinite ease-in-out
+      &__text
+        text-align: center
+.border
+  &-true
+    border: 30px solid green !important
+  &-false
+    border: 30px solid red !important
+.background
+  &-true
+    background-color: green !important
+    color: #fff
+  &-false
+    background-color: red !important
+    color: #fff
+  &-none
+    background-color: #fff 
+  &-play
+    background-color: blue 
+.taimer
+  width: 100%
+  height: 100px
+  background-color: blue
+  &-input
+    text-align: center
+    background-color: transparent
+    color: #fff 
+    font-size: 30px
+    margin-top: 25px
+    margin-bottom: 25px
+    border: none
+    outline: none
+  &-text
+    text-align: center
+    font-size: 30px
+    color: #fff
+.blitz
+  &-result
+    &__span
+      &--false
+        background-color: transparent
+        outline: none
+        border: none
+      &--true
+        background-color: transparent
+        outline: none
+        border: none
+
+  &-button
+    width: 130px
+  &-game
+    &__buttons
+      width: 100%
+      margin-top: 25px
+      display: flex
+      justify-content: space-between
+    &__button
+      &--yes
+        width: 130px
+      &--no
+        width: 130px
+  &-button
+    padding: 10px
+    width: 130px
+    margin-top: 15px
+    margin-bottom: 15px
+  &-game
+    &__image
+      width: 300px
+      height: 300px
+    &__img
+      width: 100%
+      height: 100%
+      object-fit: cover
+.animate
+  &-one
+    position: absolute
+    left: 40%
+    top: 40%
+    z-index: 100
+    color: #fff
+  &-two
+    position: absolute
+    left: 40%
+    top: 40%
+    z-index: 100
+  &-three
+    position: absolute
+    left: 40%
+    top: 40%
+    z-index: 100
+  &-four
+    position: absolute
+    left: 40%
+    top: 40%
+    z-index: 100
+.sk-double-bounce-one 
+  width: 100px
+  height: 100px
+  position: relative
+  z-index: 100
+.sk-child-one
+  display: flex
+  flex-direction: column
+  align-items: center 
+  justify-content: center
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  color: #fff
+  background-color: #FFD700
+  opacity: 0.6
+  position: absolute
+  top: 0
+  left: 0
+  animation: sk-double-bounce 2s infinite ease-in-out
+.sk-double-bounce-2 
+  animation-delay: -1s
+
+.sk-chasing-dots 
+  width: 210px
+  height: 210px
+  position: relative
+  margin: auto
+  text-align: center
+  animation: sk-chasing-dots-rotate 2s infinite linear
+
+
+.sk-child 
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 110px
+  height: 110px
+  display: inline-block
+  position: absolute
+  top: 0
+  background-color: #FFD700
+  color: #fff
+  border-radius: 100%
+  animation: sk-chasing-dots-bounce 2s infinite ease-in-out
+
+.sk-dot-2 
+  top: auto
+  bottom: 0
+  animation-delay: (-2s / 2)
+
+.sk-wandering-cubes 
+  width: 100px
+  height: 100px
+  position: relative
+  margin: auto
+
+.sk-cube 
+  background-color: #FFD700
+  width: 25px
+  height: 25px
+  position: absolute
+  top: 0
+  left: 0
+  animation: sk-wandering-cubes 1.8s ease-in-out -1.8s infinite both
+
+.sk-cube-2 
+  animation-delay: 0.9s
+
+@keyframes sk-wandering-cubes 
+  0% 
+    transform: rotate(0deg);
+  
+  25% 
+    transform: translateX(50px) rotate(-90deg) scale(0.5)
+  
+  50% 
+    transform: translateX(50px) translateY(50px) rotate(-179deg)
+
+  50.1% 
+    transform: translateX(50px) translateY(50px) rotate(-180deg)
+  
+  75% 
+    transform: translateX(0) translateY(50px) rotate(-270deg) scale(0.5)
+  100% 
+    transform: rotate(-360deg)
+
+@keyframes sk-chasing-dots-rotate 
+  100% 
+    transform: rotate(360deg)
+  
+
+@keyframes sk-chasing-dots-bounce 
+  0%,
+  100% 
+    transform: scale(0);
+  50% 
+    transform: scale(1);
+
+
+@keyframes sk-double-bounce 
+  0%,
+  100% 
+    transform: scale(0);
+  50% 
+    transform: scale(1);
+@keyframes sk-rotating-plane 
+  0% 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  50% 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  100% 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg)
+  
