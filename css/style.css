@@ -725,7 +725,7 @@ body {
 }
 
 .blitz-button {
-  width: 130px;
+  width: 140px !important;
 }
 
 .blitz-game__buttons {

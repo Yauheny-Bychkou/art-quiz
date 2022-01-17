@@ -102,7 +102,7 @@ const blitz = () => {
       return result;
     }
     showGame() {
-      let timer = localStorage.getItem("timer") ? JSON.parse(localStorage.getItem("timer")) : [];
+      let timer = 62;
       let value;
       let valueTrue;
       let valueFalse;
