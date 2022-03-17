@@ -9,6 +9,8 @@ body{
 }
 .wrapper-images {
   width: 620px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .wrapper-menu{
   display: flex;
