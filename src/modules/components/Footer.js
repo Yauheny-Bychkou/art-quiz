@@ -12,7 +12,7 @@ class Footer {
     spanYear.classList.add("span-year");
     spanYear.innerHTML = YEAR;
     imageLogo.setAttribute("alt", "logo");
-    imageLogo.setAttribute("src", "img/rs.svg");
+    imageLogo.setAttribute("src", "https://raw.githubusercontent.com/Yauheny-Bychkou/Images/ae008552b0d2c5dd7bdf8107230bc2531d7d253b/quiz/rs.svg");
     linkCource.setAttribute("href", "https://rs.school/js/");
     linkCource.setAttribute("target", "blank");
     linkGit.innerHTML = "App developer: Yauheny Bychkou";
