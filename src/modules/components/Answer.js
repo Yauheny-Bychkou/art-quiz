@@ -18,7 +18,11 @@ class Answer {
     }); 
     imageResult.setAttribute("alt", "Result");
     imageAnswer.setAttribute("alt", "Picture");
-    imageResult.setAttribute("src", answerVariant === true? "img/ok.svg":"img/error.svg");
+    imageResult.setAttribute(
+      "src",
+      answerVariant === true ? "https://raw.githubusercontent.com/Yauheny-Bychkou/Images/ae008552b0d2c5dd7bdf8107230bc2531d7d253b/quiz/ok.svg" :
+      "https://raw.githubusercontent.com/Yauheny-Bychkou/Images/ae008552b0d2c5dd7bdf8107230bc2531d7d253b/quiz/error.svg"
+    );
     imageAnswer.setAttribute("src", `https://raw.githubusercontent.com/irinainina/image-data/master/img/${trueAnswer[NUMBER_FIRST_ELEMENT].imageNum}.jpg`);
     titleNamePicture.innerHTML = trueAnswer[NUMBER_FIRST_ELEMENT].name;
     titleNameAuthor.innerHTML = trueAnswer[NUMBER_FIRST_ELEMENT].author;

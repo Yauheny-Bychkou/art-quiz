@@ -1,19 +1,19 @@
 {
-    "name": "NewsJS",
+    "name": "Art-quiz",
     "version": "1.0.0",
     "description": "",
     "main": "webpack.base.config.js",
     "scripts": {
         "start": "webpack serve --open --config ./webpack.config.js --env mode=dev",
         "build": "webpack --config ./webpack.config.js --env mode=prod",
-        "lint": "eslint . --ext .ts"
+        "lint": "eslint . --ext .js"
     },
     "repository": {
         "type": "git",
         "url": ""
     },
     "keywords": [],
-    "author": "Aleh Serhiyenia",
+    "author": "Yauheny Bychkou",
     "license": "ISC",
     "homepage": "",
     "devDependencies": {
@@ -21,6 +21,7 @@
         "copy-webpack-plugin": "^7.0.0",
         "css-loader": "^5.1.0",
         "eslint": "^7.27.0",
+        "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-import": "^2.23.3",
         "eslint-plugin-prettier": "^3.4.0",
@@ -29,7 +30,7 @@
         "style-loader": "^2.0.0",
         "webpack": "^5.37.1",
         "webpack-cli": "^4.5.0",
-        "webpack-dev-server": "^3.11.3",
+        "webpack-dev-server": "^3.11.2",
         "webpack-merge": "^5.7.3"
     }
 }

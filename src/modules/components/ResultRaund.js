@@ -27,7 +27,7 @@ class ResultRaund {
       if (arrayTrueAnswers[i] === true) countTrueAnswer++;
     }
     imageResult.setAttribute("alt", "Result");
-    imageResult.setAttribute("src", "img/final.svg");
+    imageResult.setAttribute("src", "https://raw.githubusercontent.com/Yauheny-Bychkou/Images/ae008552b0d2c5dd7bdf8107230bc2531d7d253b/quiz/final.svg");
     titleResultRaund.innerHTML = TEXT_TITLE_RESULT;
     spanCountTrueAnswer.innerHTML = countTrueAnswer;
     spanCountAllQuestions.innerHTML = COUNT_ALL_QUESTIONS_IN_TYPE;
